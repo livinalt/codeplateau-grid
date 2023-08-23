@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0;
+    }
+    .grid-1{
+        display: grid;
+        background-color: blue;
+        grid-template-columns:repeat(3, 1fr);
+        grid-template-rows: repeat(2, 0fr)
+    }
+    .grid-2{
+        display: grid;
+        background-color: blue;
+        grid-template-columns:repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr)
+    }
+    .grid-3{
+        display: grid;
+        background-color: blue;
+        grid-template-columns:repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr)
+    }
+
+    .box-1{
+        background-color: brown;
+        padding: 100px 100px 100px 100px;
+        color: white;
+        text-align: left;
+    }
+    .box-2{
+        background-color: green;
+        padding: 100px 100px 100px 100px;
+        color: white;
+        text-align: left;
+    }
+    .box-3{
+        background-color: purple;
+        padding: 100px 100px 100px 100px;
+        color: white;
+        text-align: left;
+    }
+    .box-4{
+        background-color: orange;
+        padding: 100px 553px 100px 553px;
+        color: white;
+        text-align: left;
+        align-content: left;
+    }
+    .box-5{
+        background-color: gold;
+        text-align: right;
+        padding: 100px 100px 100px 100px;
+        color: white;
+        text-align: left;
+    }
+    .box-6{
+        background-color: burlywood;
+        padding: 100px 100px 100px 100px;
+        color: white;
+        text-align: left;
+    }
+    
+</style>
+<body>
+    <div class="grid-1">
+        <div class="box-1">box1</div>
+        <div class="box-2">box2</div>
+        <div class="box-3">box3</div>
+    </div>
+    <div class="grid-2">
+        <div class="box-4">box4</div>
+        <div class="box-5">box5</div>
+     </div>
+    <div class="grid-3">
+         <div class="box-6">box6</div>
+</div>
+</body>
+</html>
